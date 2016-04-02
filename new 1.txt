@@ -1,0 +1,6 @@
+
+	if((preg_match("/[^0-9]/", '', $mob)) && strlen($mob) == 10)
+	{
+		echo "Invalid phone number";
+	}
+	
