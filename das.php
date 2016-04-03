@@ -16,7 +16,7 @@
  <nav class="teal lighten-2">
   <ul id="slide-out" class="side-nav teal lighten-2">
      <li><a href="#!">My Profile</a></li>
-      <li><a href="upload.html">Upload Docs</a></li>
+      <li><a href="upload.php">Upload Docs</a></li>
 	  <li><a href="#!">views</a></li>
     </ul>
          <a href="index.php" class="brand-logo center white-text">iLOAN</a>

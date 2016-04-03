@@ -11,7 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
- <nav>
+ <nav class="teal lighten-2">
     <div class="nav-wrapper">
       <div class="col s12">
         <a href="#!" class="breadcrumb">First</a>
@@ -23,7 +23,7 @@
   
    
 <div class=" container" >
-<form action="collect1.php" method="post"  enctype="multipart/form-data">
+<form action="collect-aadhar.php" method="post"  enctype="multipart/form-data">
    <div class="file-field input-field  ">
       <div class="btn">
         <span>Aadhar</span>
@@ -36,18 +36,18 @@
     </div>
 	  <button class="btn waves-effect waves-light" type="submit" name="submit" id="submit">upload!</button> 
 	</form>   
-<form action="incomecollect.php" method="post"  enctype="multipart/form-data">
+<form action="collect-income.php" method="post"  enctype="multipart/form-data">
 	<div class="file-field input-field  ">
-	<div class="btn">
-        <span>income</span>
+      <div class="btn">
+        <span>Income</span>
 		<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
         <input type="file" name="myfile1" id="myfile1">
       </div>
       <div class="file-path-wrapper">
         <input class="file-path validate " placeholder="upload the file" type="text">
       </div>
-	  </div>
-	  <button class="btn waves-effect waves-light" type="submit" name="submit" id="submit">upload!</button>
+    </div>
+	  <button class="btn waves-effect waves-light" type="submit" name="submit" id="submit">upload!</button> 
 </form>    
 	   
 
@@ -72,14 +72,14 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-<?php
+
+  <?php
 
 
 session_start();
 include('db.php');
 echo "username-".$_SESSION['sid'];
 ?>
-  
   
 
 </body>
